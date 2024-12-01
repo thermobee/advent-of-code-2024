@@ -1,3 +1,15 @@
+"""
+    Example input file:
+    68878   98732
+    24519   87903
+    73275   70114
+    87985   89419
+    80485   75440
+    ...
+    ...
+    ...
+"""
+
 # Two location lists
 location1 = []
 location2 = []
