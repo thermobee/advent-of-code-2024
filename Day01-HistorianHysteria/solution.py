@@ -17,7 +17,6 @@ location2 = []
 # Read input file and create two lists with the locations
 with open('input.txt') as file:
     for line in file:
-        #print(line.split())
         location1.append(int(line.split()[0]))
         location2.append(int(line.split()[1]))
 
