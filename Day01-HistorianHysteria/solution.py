@@ -29,10 +29,9 @@ location2 = sorted(location2)
 # Iterate over the sorted lists, find the distance between each pair, add to the total
 total_diff = 0
 for count, value in enumerate(location1):
-    diff = value - location2[count]
-    total_diff += abs(diff)
+    total_diff += abs(value - location2[count])
 
-#print(total_diff)
+print(total_diff)
 
 ### Part 2, calculate the similarity score
 sim_score = 0
