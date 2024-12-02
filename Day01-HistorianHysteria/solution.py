@@ -25,10 +25,20 @@ with open('input.txt') as file:
 location1 = sorted(location1)
 location2 = sorted(location2)
 
+
+### Part 1, calculate total distance between all each set of points
 # Iterate over the sorted lists, find the distance between each pair, add to the total
 total_diff = 0
 for count, value in enumerate(location1):
     diff = value - location2[count]
     total_diff += abs(diff)
 
-print(total_diff)
+#print(total_diff)
+
+### Part 2, calculate the similarity score
+sim_score = 0
+
+for number in location1:
+    sim_score += location2.count(number) * number
+
+#print(sim_score)
